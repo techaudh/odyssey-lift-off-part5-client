@@ -13,6 +13,7 @@ const GET_MODULE_AND_PARENT_TRACK = gql`
       title
       content
       videoUrl
+      durationInSeconds
     }
     track(id: $trackId) {
       id
@@ -20,7 +21,7 @@ const GET_MODULE_AND_PARENT_TRACK = gql`
       modules {
         id
         title
-        length
+        durationInSeconds
       }
     }
   }
